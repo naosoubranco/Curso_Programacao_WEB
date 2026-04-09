@@ -20,6 +20,6 @@ escreva("Insira o seu curso: ")
 leia(curso)
 escreva("Digite o número da sua máquina: ")
 leia(nm)
-escreva("O aluno ",nome," de ",idade," anos, do curso de ",curso,", está usando a máquina de número ",nm,".")
+escreva("O aluno ",nome," de ",idade," anos do curso de ",curso," está usando a máquina de número ",nm,".")
 
 fimalgoritmo
