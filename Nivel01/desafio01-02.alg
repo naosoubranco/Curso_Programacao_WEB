@@ -1,4 +1,4 @@
-algoritmo "Nome do Programa"
+algoritmo "Crachá do Técnico"
 // Disciplina  :  [Linguagem e Lógica de Programação]
 // Professor   : [Nome do Professor]
 
