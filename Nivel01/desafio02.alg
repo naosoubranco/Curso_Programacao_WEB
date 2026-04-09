@@ -12,15 +12,15 @@ expe: caractere
 
 inicio
 
-escreva"Insira seu nome completo: ")
+escreva("Insira seu nome completo: ")
 leia(nome)
 escreva("Insira sua idade: ")
 leia(idade)
-escreval("Insira seu email: ")
+escreva("Insira seu email: ")
 leia(email)
-escreval("Insira o valor da sua Bolsa Auxílio: ")
+escreva("Insira o valor da sua Bolsa Auxílio: ")
 leia(bolsa)
-escreval("Você possui alguma experiencia prévia? ")
+escreva("Você possui alguma experiencia prévia? ")
 leia(expe)
 
 
