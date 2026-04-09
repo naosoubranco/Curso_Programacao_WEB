@@ -1,17 +1,27 @@
-algoritmo "Nome do Programa"
+algoritmo "RH SENAI"
 // Disciplina  :  [Linguagem e Lógica de Programação]
-// Professor   : [Nome do Professor]
-// Descrição   : Aqui você descreve o que o programa faz! (função)
-// Autor(a)    : Nome do(a) aluno(a)
-// Data atual  : ${DATA_ATUAL}/${MES_ATUAL}/${ANO_ATUAL}
+// Professor   : Ricardo Silva
+
 var
 
-teste: caractere
+nome: caractere
+idade: caractere
+email: caractere
+bolsa: caractere
+expe: caractere
 
 inicio
 
-teste <- "Este é um teste."
-escreval ("Variável Teste")
-escreva ("O valor da variável TESTE é: " + teste)
+escreva"Insira seu nome completo: ")
+leia(nome)
+escreva("Insira sua idade: ")
+leia(idade)
+escreval("Insira seu email: ")
+leia(email)
+escreval("Insira o valor da sua Bolsa Auxílio: ")
+leia(bolsa)
+escreval("Você possui alguma experiencia prévia? ")
+leia(expe)
+
 
 fimalgoritmo
