@@ -9,13 +9,15 @@ aluno: caractere
 reserva: caractere
 
 inicio
-
-professor <- "Julio"
-aluno <- "Ricardo"
-reserva
 escreva("Olá professor, insira o seu nome: ")
-
-escreval("Corrigindo, o nome do aluno é ",professor,", e o nome do professor é ",aluno,"!")
-
+leia(aluno)
+escreva("Olá aluno, insira o seu nome: ")
+leia(professor)
+escreval("O nome do aluno é ",aluno,", e o nome do professor é ",professor,"!")
+escreval("---------- VERIFICANDO E CORRIGINDO ----------")
+reserva <- aluno
+aluno <- professor
+professor <- reserva
+escreval("Na verdade, o nome do ALUNO é ",aluno,", e o nome do PROFESSOR é ",professor,".")
 
 fimalgoritmo
