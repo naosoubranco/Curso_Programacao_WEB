@@ -8,6 +8,7 @@ tatual: real
 inicio
 
 //Correção feita para utilizar menos codigos possives incluindo um leve "Bloqueio" como aviso de perigo para a temperatura não aumentar mais que 25)
+
     escreva("Digite a temperatura atual: ")
     leia(tatual)
         se(tatual <= 20) entao 
@@ -15,6 +16,7 @@ inicio
 
         senao
         //SE dentro de SE para diminuir a utilização de linhas
+        //ENCADEAMENTO é NECESSÁRIO, encadeando a opreção vc proibe o usuario de avançar caso ele erre alguma ação
             se tatual <=25 entao 
                 escreval("Normal/ATENÇÃO")
             senao
