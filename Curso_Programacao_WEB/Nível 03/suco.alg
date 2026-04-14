@@ -1,7 +1,7 @@
 algoritmo "Nome do Programa"
 // Disciplina  :  [Linguagem e Lógica de Programação]
 // Professor   : [Nome do Professor]
-
+//     escreval("Talita, Carina e Lucas estão brincando enquanto a mãe de uma delas prepara três sucos diferentes Siga as pistas para descobrir o suco favorito e a idade de cada uma das crianças. 1. A menina que gosta de suco de laranja tem dois anos a mais que Talita 2. A criança que gosta de suco de maracujá tem 8 anos")
 var
 c1: caractere
 c2: caractere
@@ -9,11 +9,7 @@ c3: caractere
 erroc: caractere
 
 inicio
-
-    escreval("Talita, Carina e Lucas estão brincando enquanto a mãe de uma delas prepara três sucos diferentes Siga as
-pistas para descobrir o suco favorito e a idade de cada uma das crianças.
-1. A menina que gosta de suco de laranja tem dois anos a mais que Talita
-2. A criança que gosta de suco de maracujá tem 8 anos")
+//REFAZER e usar ENCADEAMENTO NAS QUESTÕES
     escreva("Suco de Maracujá: ")
     leia(c1)
          repita
