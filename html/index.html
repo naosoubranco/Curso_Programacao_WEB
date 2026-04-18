@@ -12,9 +12,10 @@
 </head>
 
 <body> <!--Corpo da página-->
-    <header> <!--Cabeçalho da página-->
+    <header><hr><hr> <!--Cabeçalho da página-->
         <h1> Teste para programador </h1> <!--Recomendado ter apenas um h1 por página-->
         <p> Teste seus conhecimentos como programador e veja em qual nível de programador você se encaixa!</p>
+        <hr>
         <!--Parágrafo-->
     </header>
 
@@ -23,41 +24,137 @@
             <h2>Sobre este teste</h2>
             <p>Este teste foi desenvolvido para treinar seus <u>conhecimentos</u> em <strong>programação</strong>.<br> Como: Lógica de Programação,
                 Linguagem de Programação, Códigos, conceitos básicos e outros...</br>
-                Você encontrará diferentes tipos de perguntas, por exemplo: múltipla escolha, interpretação, análise de
+                Você encontrará diferentes tipos de perguntas, por exemplo: <small>múltipla</small> <sup>escolha</sup>, interpretação, análise de
                 imagem, datas, texto, etc.
                 <br>Você também poderá encontrar alguns <b>acrônimos</b> como<abbr title="HyperText Markup Language"> HTML </abbr> e <abbr title="Cascade Style Sheets"> CSS </abbr>que são comumente usados em questões
                 relacionadas a
                 <em>Desenvolvimento Web</em>. 
-                <i><b><br>Boa sorte!</b></i>
+                <i><b><br><br>Boa sorte!</b></i>
             </p>
         <!-- Propriedades do parágrafo (textos):
         <strong> dar forte importancia ao texto
-        <b> negrito
-        <i> itálico
-        <u> sublinhado
-        <em> dar enfase no trecho escolhido
-        <br> quebra de linha
-        <abbr> cria uma abreviação explicativa ao passar o mouse -->
+        <b> - negrito
+        <i> - itálico
+        <u> - sublinhado
+        <em> - dar enfase no trecho escolhido
+        <br> - quebra de linha
+        <abbr> - cria uma abreviação explicativa ao passar o mouse
+        <hr> - acrescenta uma linha divisória
+        <small> - diminui ligeiramente um trecho (pode ser usado como uma legenda improvisada)
+        <sup> - o trecho ganha um destaque se movendo para a parte superior 
+        <sub> - efeito contrário ao de sup 
+        <placeholder> utilizado em caixas de preenchimento -->
+        
+    
         </section>
     
         <!-- Inicio do QUIZ -->
         <!-- Questão 1 -->
         <section>
-            <h2>Questão 1: Qual linguagem é usada para estruturar páginas na Web?</h2>
-            <form> <!-- A tag form, é uma das mais importantes de qualquer sistema interativo da web, pois ela trabalha como envelope que agrupa os campos de entrada (inputs) e define onde e como os dados preenchidos pelo usuário serão enviados-->
+            <h2>1. Qual linguagem é usada para estruturar páginas na Web?</h2>
+            <form> <!-- A tag <form>, é uma das mais importantes de qualquer sistema interativo da web, pois ela trabalha como envelope que agrupa os campos de entrada (inputs) e define onde e como os dados preenchidos pelo usuário serão enviados-->
             <!--A linha INPUT representa o link com a lógica a ser implementada no backend-->
-            <input type="radio" value="Python" id="q1a" name="pergunta1">
-            <label for="q1a">Python</label> <!--O nome descrito na tag "name" não é visivel para o usuário sendo então 
+                <input type="radio" value="Python" id="q1a" name="pergunta1"> <!-- Em caso de escolhas o "value" deve ser utilizado, quando você force opões para o usuário-->
+                    <label for="q1a">Python</label> <!--O nome descrito na tag "name" não é visivel para o usuário sendo então 
             necessário acrescentar uma liha com a tag <label> -->
-            <input type="radio" value="JavaScript" id="q1b" name="pergunta1">
-            <label for="q1b">JavaScript</label>
-            <input type="radio" value="C++" id="q1c" name="pergunta1">
-            <label for="q1c">C++</label>
-            <input type="radio" value="HTML" id="q1d" name="pergunta1">
-            <label for="q1d">HTML</label>
+                <input type="radio" value="JavaScript" id="q1b" name="pergunta1">
+                    <label for="q1b">JavaScript</label>
+                <input type="radio" value="C++" id="q1c" name="pergunta1">
+                    <label for="q1c">C++</label>
+                <input type="radio" value="HTML" id="q1d" name="pergunta1">
+                    <label for="q1d">HTML</label>
     
             </form>
-        </section>
+        </section><hr>
+
+        <!---Questão 2 CAIXA DE TEXTO COM PLACEHOLDER -->
+        <section>
+            <form>
+                <h2>2. Na URL https://www.google.com, o trecho "google.com" é conhecido como:</h2>
+                    <label for="q2"> Escreva a resposta correta:</label><br>
+                        <input type="text" id="q2" name="pergunta2" placeholder="Digite sua resposta aqui">
+            </form>
+
+        </section><hr>
+
+        <!---Questão 3 (SENHA/PASSWORD)-->
+        <section>
+            <form>
+                <h2>3. Escreva um exemplo de senha segura:</h2>
+                    <label for="q3"> Escreva a resposta correta:</label><br>
+                        <input type="password" id="q3" name="pergunta3" placeholder="Digite a senha aqui">
+            </form>
+        </section><hr>
+
+        <!---Questão 4 DATA-->
+        <section>
+            <form>
+                <h2>4. Em que ano o HTML foi lançado?</h2>
+                    <label for="q4"> Insira a data correta:</label><br>
+                        <input type="date" id="q4" name="pergunta4">
+            </form>
+        </section><hr>
+
+        <!---Questão 5 - SELEÇÃO MÚLTIPLA (CHECKBOX) -->
+        <section>
+            <form>
+                <h2>5. Quais destas tecnologias são consideradas Linguam de programação?</h2>
+                    <input type="checkbox" value="JavaScript" id="q5a" name="pergunta5">
+                        <label for="q1b">JavaScript</label><br>
+                    <input type="checkbox" value="CSS" id="q5b" name="pergunta5">
+                        <label for="q1c">CSS</label><br>
+                    <input type="checkbox" value="HTML" id="q5c" name="pergunta5">
+                        <label for="q2d">HTML</label><br>
+                    <input type="checkbox" value="Python" id="q5d" name="pergunta5">
+                        <label for="q2d">Python</label><br><hr>
+            </form>
+    
+         <!---Questão 6 UPLOAD-->
+        <section>
+            <h2>6. Faça upload de um arquivo que contenha o código html:</h2>
+                 <form>         
+                    <input type="file" id="q6" name="pergunta6"><hr>
+                </form>   
+            
+
+        <!---Questão 7 - Menu suspenso -->
+        <section>
+            <h2>7. Selecione o atributo do INPUT que define o seu tipo</h2>
+                <form>
+                    <select id="q7" name="pergunta7">
+                        <option value= "id">id</option>
+                        <option value="class">class</option>
+                        <option value="type">type</option>
+                        <option value="name">name</option>
+                        <option value="placeholder">placeholder</option></select><hr>
+
+                </form>
+
+         <!---Questão 8 IMAGEM-->
+        <section>
+            <form>
+                <h2>8. Qual Linguagem de Programção é representada por esta logo abaixo:</h2>
+                
+                <figure>
+                
+                    <img src=".\assets\java.png" alt="Imagem do logotipo, uma xícara azul abstrata com uma fumaça vermelha representada com dois riscos">
+                
+                <figcaption>
+                    Figura 1 - Logotipo da Linguagem de Programação
+                </figcaption>
+
+                </figure>    
+                   
+                    <label for="q8"> Insira a data correta:</label><br>
+                        <input type="radio" value="JavaScript" id="q1a" name="pergunta8">
+                            <label for="q8a">CSS</label>
+                        <input type="radio" value="C++" id="q1b" name="pergunta8">
+                            <label for="q8b">JavaScript</label>
+                        <input type="radio" value="HTML" id="q1c" name="pergunta8">
+                            <label for="q8c">HTML</label>
+                        <input type="radio" value="Python" id="q1d" name="pergunta8">
+                            <label for="q8d">Python</label>
+            </form>
     </main>
 
     <footer><!--Rodapé da página-->
