@@ -47,10 +47,9 @@
         
     
         </section>
-    
-        <!-- Inicio do QUIZ -->
-        <!-- Questão 1 -->
-        <section>
+        <!-- Inicio do QUIZ -->    
+
+        <section><!-- Questão 1 -->
             <h2>1. Qual linguagem é usada para estruturar páginas na Web?</h2>
             <form> <!-- A tag <form>, é uma das mais importantes de qualquer sistema interativo da web, pois ela trabalha como envelope que agrupa os campos de entrada (inputs) e define onde e como os dados preenchidos pelo usuário serão enviados-->
             <!--A linha INPUT representa o link com a lógica a ser implementada no backend-->
@@ -67,8 +66,9 @@
             </form>
         </section><hr>
 
-        <!---Questão 2 CAIXA DE TEXTO COM PLACEHOLDER -->
-        <section>
+
+
+        <section><!---Questão 2 CAIXA DE TEXTO COM PLACEHOLDER -->
             <form>
                 <h2>2. Na URL https://www.google.com, o trecho "google.com" é conhecido como:</h2>
                     <label for="q2"> Escreva a resposta correta:</label><br>
@@ -77,8 +77,9 @@
 
         </section><hr>
 
-        <!---Questão 3 (SENHA/PASSWORD)-->
-        <section>
+
+        
+        <section><!---Questão 3 (SENHA/PASSWORD)-->
             <form>
                 <h2>3. Escreva um exemplo de senha segura:</h2>
                     <label for="q3"> Escreva a resposta correta:</label><br>
@@ -86,8 +87,9 @@
             </form>
         </section><hr>
 
-        <!---Questão 4 DATA-->
-        <section>
+
+
+        <section><!---Questão 4 DATA-->
             <form>
                 <h2>4. Em que ano o HTML foi lançado?</h2>
                     <label for="q4"> Insira a data correta:</label><br>
@@ -95,8 +97,9 @@
             </form>
         </section><hr>
 
-        <!---Questão 5 - SELEÇÃO MÚLTIPLA (CHECKBOX) -->
-        <section>
+
+
+        <section> <!---Questão 5 - SELEÇÃO MÚLTIPLA (CHECKBOX) -->
             <form>
                 <h2>5. Quais destas tecnologias são consideradas Linguam de programação?</h2>
                     <input type="checkbox" value="JavaScript" id="q5a" name="pergunta5">
@@ -108,17 +111,20 @@
                     <input type="checkbox" value="Python" id="q5d" name="pergunta5">
                         <label for="q2d">Python</label><br><hr>
             </form>
+        </section>
     
-         <!---Questão 6 UPLOAD-->
-        <section>
+
+
+        <section><!---Questão 6 UPLOAD-->
             <h2>6. Faça upload de um arquivo que contenha o código html:</h2>
                  <form>         
                     <input type="file" id="q6" name="pergunta6"><hr>
-                </form>   
+                </form>
+        </section>   
             
 
-        <!---Questão 7 - Menu suspenso -->
-        <section>
+        
+        <section><!---Questão 7 - Menu suspenso -->
             <h2>7. Selecione o atributo do INPUT que define o seu tipo</h2>
                 <form>
                     <select id="q7" name="pergunta7">
@@ -129,9 +135,11 @@
                         <option value="placeholder">placeholder</option></select><hr>
 
                 </form>
+        </section>
 
-         <!---Questão 8 IMAGEM-->
-        <section>
+
+
+        <section><!---Questão 8 IMAGEM-->
             <form>
                 <h2>8. Qual Linguagem de Programção é representada por esta logo abaixo:</h2>
                 
@@ -145,7 +153,7 @@
 
                 </figure>    
                    
-                    <label for="q8"> Insira a data correta:</label><br>
+                    <label for="q8"> Assinale:</label><br>
                         <input type="radio" value="JavaScript" id="q1a" name="pergunta8">
                             <label for="q8a">CSS</label>
                         <input type="radio" value="C++" id="q1b" name="pergunta8">
@@ -155,7 +163,76 @@
                         <input type="radio" value="Python" id="q1d" name="pergunta8">
                             <label for="q8d">Python</label>
             </form>
+        </section>
+
+
+
+        <section><!---Questão 9 TABELA DE PONTUAÇÃO-->
+            <h2>9. Tabela de pontuação</h2>
+                    <tbody><!--Artifício que mostra a tabela em navegadores que não mostra a tabela apenas com a tag <table>-->
+                        <table border="1"> <!--Monta a estrutura de uma tabela-->
+                            <thead>
+                                <tr>
+                                    <th> Pontuação</th><th>Descrição</th><!--A tag <th> cria um estilo para o trecho da tabela (negrito e centralizado)-->
+                                </tr>
+
+                            </thead>
+                                <tr> <!-- A tag <tr> cria uma linha na tabela-->
+                                    <td> 0 - 2 </td><td> Seu desempenho não foi muito bom.</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td> 3 - 4 </td><td>Seu desempenho foi moderado.</td>
+                                </tr>
+
+                                <tr>
+                                    <td> 5 - 6 </td><td>Seu desempenho está regular.</td>
+                                </tr>
+                                <tr>
+                                    <td> 7 - 8 </td><td>Muito bom! Você está aprendendo.</td>
+                                </tr>
+
+                                <tr>
+                                    <td> 9 - 10 </td><td>Parabéns programador!</td>
+                                </tr>
+
+                                <tfoot><!--Rodapé da tabela-->
+                                
+                                        <th colspan="2"> Boa sorte!</th><!-- a adição do cosplan une as linhas da tabela em uma só-->
+                                </tfoot>
+                        </table>
+                    </tbody>
+        </section>
+
+        
+        
+        <section><!---Questão 10 - Lista de Respostas -->
+            <h2>10. Verifique sua resposta:</h2>
+            <!-- Como na tabela, para trabalharmos com listas, precisamos informar a intenção através da tag <ul>-->
+                <ul><!-- <ul> Habilita lista / <ol> Lista numerada / <li> lista de pontos-->
+                    
+                    <details>
+
+                        <summary> Clique para visualizar respostas.</summary>
+                    
+                        <li>HTML</li>
+                        <li>Domínio</li>
+                        <li>A1L@ril89O</li>
+                        <li>1991</li>
+                        <li>Java - JavaScript - Python</li>
+                        <li>*.html</li>
+                        <li>type</li>
+                        <li>Java</li>
+                        
+                    </details>
+    
+                </ul>
+        </section>
+                   
+
     </main>
+
+    
 
     <footer><!--Rodapé da página-->
 
