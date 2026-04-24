@@ -8,21 +8,22 @@
     <meta name="description" content="Teste para programador">
     <!--Descrição do site e suas caracteristicas resumidas, facilita busca -->
     <meta name="keywords" content="aula, web"> <!--Palavras chave para mecanismos de pesquisa "google" por exemplo-->
+    <link rel="stylesheet" href="css\style.css">
     <title>Quiz Para Programadores</title> <!--Título da pagina (aparecerá na guia/aba do navegador)-->
 </head>
 
 <body> <!--Corpo da página-->
     <header><hr><hr> <!--Cabeçalho da página-->
-        <h1> Teste para programador </h1> <!--Recomendado ter apenas um h1 por página-->
-        <p> Teste seus conhecimentos como programador e veja em qual nível de programador você se encaixa!</p>
+        <h1> TESTE INTERATIVO PARA PROGRAMADORES </h1> <!--Recomendado ter apenas um h1 por página-->
+        <p class="pheader"> Teste seus conhecimentos como programador e veja em qual nível de programador você mais se encaixa!</p>
         <hr>
         <!--Parágrafo-->
     </header>
 
     <main> <!-- Conteúdo da página-->
-        <section> <!-- Delimita de forma organizada partes específicas do site-->
-            <h2>Sobre este teste</h2>
-            <p>Este teste foi desenvolvido para treinar seus <u>conhecimentos</u> em <strong>programação</strong>.<br> Como: Lógica de Programação,
+        <section> <!--A tag <section> Delimita de forma organizada partes específicas do site-->
+            <h2>Sobre este teste:</h2>
+            <p class="intro">Este teste foi desenvolvido para treinar seus <u>conhecimentos</u> em <strong>programação</strong>.<br> Como: Lógica de Programação,
                 Linguagem de Programação, Códigos, conceitos básicos e outros...</br>
                 Você encontrará diferentes tipos de perguntas, por exemplo: <small>múltipla</small> <sup>escolha</sup>, interpretação, análise de
                 imagem, datas, texto, etc.
@@ -47,6 +48,7 @@
         
     
         </section>
+        
         <!-- Inicio do QUIZ -->    
 
         <section><!-- Questão 1 -->
@@ -70,7 +72,7 @@
 
         <section><!---Questão 2 CAIXA DE TEXTO COM PLACEHOLDER -->
             <form>
-                <h2>2. Na URL https://www.google.com, o trecho "google.com" é conhecido como:</h2>
+                <h2>2. Na URL "https://www.google.com", o trecho "google.com" é conhecido como:</h2>
                     <label for="q2"> Escreva a resposta correta:</label><br>
                         <input type="text" id="q2" name="pergunta2" placeholder="Digite sua resposta aqui">
             </form>
