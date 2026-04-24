@@ -1,0 +1,74 @@
+/*Importar Fonte personalizada (COPIAR E COLAR A FONTE ESCOLHIDA DO GOOGLE FONTS por exemplo*/
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Saira+Stencil:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Seletor de todo conteúdo da página*/
+*{ 
+    margin: 0.3rem; /*Espaçamento das margens - REM é a medida relativa a tela em que for apresentado o app*/
+    padding: 0;/*Espaçamento interno*/
+    box-sizing: border-box; /*Caixa(box) padrão de todo site*/
+    
+}
+
+hr {display: none;} /*Desabilita a tag <hr>*/
+
+/* Seletor de todo conteúdo da página*/
+
+body{
+    background-color: #012421;
+    color: #caf0f8;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+    header{
+        padding: 3rem;
+        border: #e0e1dd;
+        border-width: 0.5rem;
+        border-style:double;
+        border-radius: 2rem; /*site mdn radius gives you easy examples to copy and paste*/
+        
+        font-size: 1.08rem;
+        font-family: "Saira Stencil", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        font-variation-settings:
+        "wdth" 100;
+        
+    }
+
+
+        h1{
+            color: beige;
+        }
+
+        h2{
+            color: #e0e1dd;
+        }
+
+
+    main{
+
+        padding: 1.5rem;
+        display: flex; /*flex é utilizado para fazer colunas (alinhamento seja horizontal ou vertical)*/
+        flex-direction: column; /*aqui no direction você direciona a coluna se vertical ou horizontal*/
+        gap: 2rem; /* gap é o espaçamento entre linha ou colunas, depende de onde vc o utilizar*/
+    }
+
+    
+    section{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    p.intro{
+        line-height: 1.5;
+        text-align: justify;
+        padding: 1.5rem;
+        background-color: #04534d;
+        border-left: thick double #32a1ce;
+    }
